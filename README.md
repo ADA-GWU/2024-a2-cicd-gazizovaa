@@ -5,7 +5,7 @@
 
 ## 1. Install Python
 * Make sure that Python is installed in your machine. Othweise, please refer to this page [Download Python](https://www.python.org/);
-* You should have Python editor/IDE depending on your choise. Convenient choises include [PyCharm](https://www.jetbrains.com/pycharm/download/?section=windows) and .[Visual Studio Code](https://code.visualstudio.com/download);
+* You should have Python editor/IDE depending on your choise. Convenient choises include [PyCharm](https://www.jetbrains.com/pycharm/download/?section=windows) and [Visual Studio Code](https://code.visualstudio.com/download);
 * Download the latest Python version . This assignmented required Python 3.8 or higher (mine is Python 3.11.8).
 
 ## 2. Install Selenium 
@@ -21,7 +21,7 @@ pip install pipenv
 
 ## 4. SetUp Webdriver
 * You will neeed to install the latests versions of Google Chrome and Mozilla FireFox. You can prefer to use other browsers with Selenium WbeDriver;
-* You will need to install the latests versions of the WebDriver executables for these browsers: [ChromeDriver](https://chromedriver.chromium.org/downloads) for Chrome and .[geckodriver](https://github.com/mozilla/geckodriver/releases) for FireFox.
+* You will need to install the latests versions of the WebDriver executables for these browsers: [ChromeDriver](https://chromedriver.chromium.org/downloads) for Chrome and [geckodriver](https://github.com/mozilla/geckodriver/releases) for FireFox.
 
 ## 5. SetUp WebDriver for Windows OS
 #### In my case, I used ChromeDriver. To install ChromeDriver:
@@ -37,8 +37,7 @@ pip install pipenv
 
 **Step 5:** Locate the chromedriver.exe from the folder to a place on your machine. I copied chromedriver and pasted it in the C:\Program Files\Google\Chrome\Application. Also, don't forget to add path to the Environment Variables, as C:\Program Files\Google\Chrome path, under System Variables -> Path.
 
-### The name of the application I selected is Dribble:
-https://dribbble.com/ 
+### The name of the application I selected is [Dribble - Main Page](https://dribbble.com/) 
 
 ## 6. Run Python Scripts
 ### Run test_search_feature.py file
