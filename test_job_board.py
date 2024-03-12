@@ -9,16 +9,13 @@ from selenium.common.exceptions import TimeoutException
 
 class DribbbleJobsSearchTest(unittest.TestCase):
     def setUp(self):
-        # Set up the WebDriver (assuming Chrome WebDriver here)
+        # Set up the webdriver instance for Chrome browser
         self.browser_driver = webdriver.Chrome()
-        self.browser_driver.get("https://dribbble.com/search")  
-    def tearDown(self):
-        # Close the WebDriver after each test
-        self.browser_driver.quit()
+        self.browser_driver.get("https://dribbble.com/search")
 
-    def test_search_adobe_photoshop_jobs(self):
+    def test_search_jobs_board(self):
         # The searched item
-        search_for_adobe_photoshop_jobs = "Adobe Photoshop"
+        search_for_jobs = "Adobe Photoshop"
 
         try:
             # Wait for clickable search input
@@ -27,7 +24,7 @@ class DribbbleJobsSearchTest(unittest.TestCase):
             # Clear the search box
             search_input.clear()
             # Waiting for the search input to become clickable
-            search_input.send_keys(search_for_adobe_photoshop_jobs)
+            search_input.send_keys(search_for_jobs)
 
             # Initiate the searching with the Enter key
             search_input.send_keys(Keys.RETURN)
@@ -35,11 +32,14 @@ class DribbbleJobsSearchTest(unittest.TestCase):
             WebDriverWait(self.browser_driver, 10).until(
                 EC.presence_of_element_located((By.CLASS_NAME, "jobs-link")))
 
+        # Handle the timeout exception here
         except TimeoutException:
-            # Handle the timeout exception here
-            pass  # You can add any necessary error handling or logging here, or leave it empty
+            # Add necessary error handling or leave it if it's empty
+            pass
 
-        # Add your assertions or further test steps here
+    def tearDown(self):
+        # Close the WebDriver after each test
+        self.browser_driver.quit()
 
 
 if __name__ == "__main__":
