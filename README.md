@@ -37,7 +37,7 @@ pip install pipenv
 
 **Step 5:** Locate the chromedriver.exe from the folder to a place on your machine. I copied chromedriver and pasted it in the C:\Program Files\Google\Chrome\Application. Also, don't forget to add path to the Environment Variables, as C:\Program Files\Google\Chrome path, under System Variables -> Path.
 
-### The name of the application I selected is [Dribble](https://dribbble.com/search) 
+### The name of the application I selected is Dribble (https://dribbble.com/search)
 
 ## 6. Run Python Scripts
 ### Run test_search_feature.py file
