@@ -9,12 +9,12 @@
 * Download the latest Python version . This assignmented required Python 3.8 or higher (mine is Python 3.11.8).
 
 ## 2. Install Selenium 
-### Install Selenium using Python's package manager. Open the command prompt or terminal and type the following command:
+#### Install Selenium using Python's package manager. Open the command prompt or terminal and type the following command:
 ```
 pip install selenium
 ```
 ## 3. Install Python Environment
-### You are required to use pipenv. To install pipenv, run the following command from terminal or command line:
+#### You are required to use pipenv. To install pipenv, run the following command from terminal or command line:
 ```
 pip install pipenv
 ```
@@ -24,7 +24,7 @@ pip install pipenv
 * You will need to install the latests versions of the WebDriver executables for these browsers: .[ChromeDriver](https://chromedriver.chromium.org/downloads) for Chrome and .[geckodriver](https://github.com/mozilla/geckodriver/releases) for FireFox.
 
 ## 5. SetUp WebDriver for Windows OS
-### In my case, I used ChromeDriver. To install ChromeDriver:
+#### In my case, I used ChromeDriver. To install ChromeDriver:
 **Step 1:** Go to .[ChromeDriver - WebDriver for Chrome - Downloads page](https://chromedriver.chromium.org/downloads) to install the latest Wbedriver executables;
 
 **Step 2:** Click on the **The Chrome for Testing availability dashboard**, indicated by redline under **Current Releases**;
